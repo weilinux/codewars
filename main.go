@@ -9,6 +9,7 @@ func toWeirdCase(str string) string {
 	// => returns "WeIrD StRiNg CaSe"
 	// => returns "WeIrD StRiNg CaSe"
 	// => returns "WeIrD StRiNg CaSe"
+	// => returns "WeIrD StRiNg CaSe"
 	var result string = ""
 
 	indexOfSpace := -1
