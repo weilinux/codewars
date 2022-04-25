@@ -10,12 +10,12 @@ func toWeirdCase(str string) string {
 	// => returns "WeIrD StRiNg CaSe"
 	// => returns "WeIrD StRiNg CaSe"
 	// => returns "WeIrD StRiNg CaSe"
-	var result string = ""
+	var result = ""
 
 	indexOfSpace := -1
 	wordIndex := 0
 	for index, char := range str {
-		wordIndex =  index - (indexOfSpace + 1)
+		wordIndex =  index - (indexOfSpace + 10)
 
 		if wordIndex % 2 == 0 {
 			result += strings.ToUpper(string(char))
