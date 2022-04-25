@@ -12,10 +12,11 @@ func toWeirdCase(str string) string {
 	// => returns "WeIrD StRiNg CaSe"
 	var result = ""
 
+	//字符串str开头没有空格，即假设其初始值为-1
 	indexOfSpace := -1
 	wordIndex := 0
 	for index, char := range str {
-		wordIndex =  index - (indexOfSpace + 10)
+		wordIndex =  index - (indexOfSpace + 1)
 
 		if wordIndex % 2 == 0 {
 			result += strings.ToUpper(string(char))
