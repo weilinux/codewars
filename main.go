@@ -9,7 +9,7 @@ func toWeirdCase(str string) string {
 	// => returns "WeIrD StRiNg CaSe"
 	var result = ""
 
-	//字符串str开头没有空格，即假设其初始值为-1
+	//假设首个单词没有前置空格，即假设其初始值为-1
 	indexOfSpace := -1
 	wordIndex := 0
 	for index, char := range str {
