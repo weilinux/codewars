@@ -31,7 +31,6 @@ func toWeirdCase(str string) string {
 func toWeirdCase2(str string) string {
 	var result = ""
 
-	//str1 := "Weird string case"
 	strArray := strings.Split(str, string(' '))
 	for _, word := range strArray {
 		for wordIndex, char := range word {
@@ -40,14 +39,12 @@ func toWeirdCase2(str string) string {
 			} else {
 				result += strings.ToLower(string(char))
 			}
-
 		}
 		if len(strArray) > 1 {
 			result += string(' ')
 		}
 	}
 	return result
-	
 }
 
 
