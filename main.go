@@ -42,7 +42,9 @@ func toWeirdCase2(str string) string {
 			}
 
 		}
-		result += string(' ')
+		if len(strArray) > 1 {
+			result += string(' ')
+		}
 	}
 	return result
 	
