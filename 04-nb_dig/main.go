@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+//count Occurrences times of char in square of 0-N^2
 func NbDig(n int, d int) int {
 	var result = 0
 	var numString = ""
